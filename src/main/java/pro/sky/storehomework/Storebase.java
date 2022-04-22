@@ -4,15 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Storebase {
-    private Map <Integer, String> storebase;
+    private Map<Integer, String> storebase = Map.of(1, "Milk", 2, "Bread", 3, "Eggs",
+            4, "Meat", 5, "Fruits", 6, "Bear");
 
-    public Storebase(){
-        Map<Integer, String>storebase = new HashMap<Integer,String>();
-        storebase.put(1,"Bread");
-        storebase.put(2,"Milk");
-        storebase.put(3,"Eggs");
-        storebase.put(4,"Meat");
-        storebase.put(5,"Fish");
-        storebase.put(6,"Bear");
+    public Map<Integer, String> getStorebase() {
+        return storebase;
     }
 }
